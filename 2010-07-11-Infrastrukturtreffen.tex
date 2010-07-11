@@ -77,6 +77,10 @@ Möglichkeiten, sich zu authentifizieren:
 \item{} SSH-Login per WLAN
 \end{itemize}
 
+Wir brauchen eine Möglichkeit, anzuzeigen, dass man den Raumstatus nicht auf `"auf'" setzen will.
+Wir wollen die Schließvorgänge protokollieren, um bei Missbrauch nachvollziehen zu können, wer verantwortlich ist.
+Wer möchte, kann denn Statusbot anzeigen lassen, dass er anwesend ist.
+
 \section{Verbindung von Mikrocontrollern}
 
 Möglichkeit: 6lowpan
@@ -96,13 +100,16 @@ Anforderungen:
 \item{} Punktmatrix-Display
 \item{} Über den Bus IP sprechen und mit der Kassensoftware kommunizieren.
 \item{} Audio-Feedback
-\item{}
+\item{} Kopplung an den Statusbot für personalisierte Anzeige
 \end{itemize}
 
 \section{Lichtsteuerung}
 
 Soll ebenfalls über den RS485-Bus laufen.
 Tim redet mit DaFo wegen seinem NET-IO-Board und Lichtsteuerung.
+Wir wollen Rauchmelder, die an \uc angeschlossen sind und uns alarmieren, wenn es brennt.
+Wir wollen die Ätzecke komplett abschalten, wenn niemand da ist.
+
 
 \section{Eigenes Internet}
 
@@ -114,20 +121,23 @@ Tim redet mit DaFo wegen seinem NET-IO-Board und Lichtsteuerung.
 \item{} Niklas fragt bei QSC
 \end{itemize}
 
+\section{Audioinfrastruktur}
 
-Streaming von Vorträgen
+\begin{itemize}
+\item{} Wir wollen die 4 neuen Boxen an die Anlage anschließen, wissen aber nicht, ob die für das Audiolabor gedacht waren.
+\item{} Wir wollen ein symmetrisches Signal vom Audiolabor zur Anlage. Dafür brauchen wir ein Gerät an der Anlage, das das kann.
+\item{} 
+\item{} 
+\item{} 
+\end{itemize}
 
-\section{Benutzerdatenbank}
+\section{Zeug in Kühlschränken}
 
-\section{Türschloss}
+Problem: Essen wird in die Kühlschränke gelegt und vergessen.
 
-Welches Schloss?
-Art der Authentifizierung?
-Raumstatus?
-Kommunikation der Mikrocontroller
-Kassenterminal
-Lichtsteuerung
-Audioverdrahtung
+Lösung: Essen wird mit Aufklebern mit Name und Datum beschriftet und nach \$Zeit vogelfrei.
+
+
 
 Netzwerkstruktur
 Streaming von Vorträgen
