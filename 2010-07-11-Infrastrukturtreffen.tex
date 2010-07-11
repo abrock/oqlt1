@@ -1,9 +1,10 @@
-\documentclass{scrartcl}
+\documentclass[parskip]{scrartcl}
 
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 
 \newcommand\docsteel{Docsteel}
+\newcommand\zwetschgo{Zwetschgo}
 \newcommand\euro{Euro}
 \newcommand\uc{Mikrocontroller}
 
@@ -17,28 +18,32 @@ Tim Weber begrüßt die Anwesenden und erklärt, warum er die Projektgruppe Infr
 
 \section{Netzwerkstruktur}
 
-Alle Netzwerkkabel auf das Patchpanel legen, spezielle Dienste mit merkwürdigen EIgenschaften (Stromzähler...) gesondert beschriften
+\begin{itemize}
+
+\item{} Alle Netzwerkkabel auf das Patchpanel legen, spezielle Dienste mit merkwürdigen EIgenschaften (Stromzähler...) gesondert beschriften
 um Verwirrung zu vermeiden.
 
-Tim betont den Aspekt der (kurz- und Langfristigen) Wirtschaftlichkeit.
+\item{} Tim betont den Aspekt der (kurz- und Langfristigen) Wirtschaftlichkeit.
 
-Niklas will das Rack zum Lagern von Netzwerkhardware verwenden.
+\item{} Niklas will das Rack zum Lagern von Netzwerkhardware verwenden.
 
-Tim will die Firebox nicht für allen möglichen Firlefanz einsetzen.
-Deshalb soll ein zweiter Server für interne Dienste angeschafft werden.
+\item{} Tim will die Firebox nicht für allen möglichen Firlefanz einsetzen.
+\item{} Deshalb soll ein zweiter Server für interne Dienste angeschafft werden.
 
-Der Internet-Uplink geht durch den Server von \docsteel.
+\item{} Der Internet-Uplink geht durch den Server von \docsteel.
 
-Wir brauchen einen Notfallplan für Dummies, den wir an das Rack hängen und der erklärt, was man tut, wenn
+\item{} Wir brauchen einen Notfallplan für Dummies, den wir an das Rack hängen und der erklärt, was man tut, wenn
 das Internet ausfällt.
 
-Der Switch von Timo soll sobald wie möglich durch etwas besseres ersetzt werden.
-Der 3Com Superstack fällt wegen bekannter Merkwürdigkeiten aus.
-Die letzten 6 Ports am Switch sind für interne Dienste und sollen entsprechen beschriftet werden.
+\item{} Der Switch von Timo soll sobald wie möglich durch etwas besseres ersetzt werden.
+\item{} Der 3Com Superstack fällt wegen bekannter Merkwürdigkeiten aus.
+\item{} Die letzten 6 Ports am Switch sind für interne Dienste und sollen entsprechen beschriftet werden.
 
-Tim schlägt vor, den Switch abzuschalten, wenn niemand im Raum ist.
-\docsteel will den WLAN-AP direkt an die Firebox hängen.
-Der Flukso muss dann auch direkt an die Firebox.
+\item{} Tim schlägt vor, den Switch abzuschalten, wenn niemand im Raum ist.
+\item{} \docsteel will den WLAN-AP direkt an die Firebox hängen.
+\item{} Der Flukso muss dann auch direkt an die Firebox.
+
+\end{itemize}
 
 Die Firebox hat 5 Ports +1 Uplink-Port. Die Ports werden wie folgt belegt:
 \begin{itemize}
@@ -49,17 +54,17 @@ Die Firebox hat 5 Ports +1 Uplink-Port. Die Ports werden wie folgt belegt:
 \item{} Mikrocontroller
 \end{itemize}
 
-Die Firebox muss dann irgendwie die IP-Steckdosen bedienen.
-
-Wir brauchen schaltbare Steckdosen und einen Automatisumus, der alles unnötiges abschaltet, wenn niemand mehr da ist.
-
-Auf https://datenschleuder.net/munin/net/datenschleuder.net-if\_dn42\_rzl.html stehen Traffic-Statistiken des Uplinks.
-
-Für interne Dienste steht die Blackbox von Inte zur Verfügung.
+\begin{itemize}
+\item{} Die Firebox muss dann irgendwie die IP-Steckdosen bedienen.
+\item{} Wir brauchen schaltbare Steckdosen und einen Automatisumus, der alles unnötiges abschaltet, wenn niemand mehr da ist.
+\item{} Auf https://geheim/ stehen Traffic-Statistiken des Uplinks.
+\item{} Für interne Dienste steht die Blackbox von Inte zur Verfügung.
+\end{itemize}
 
 \section{Zentrale Benutzerverwaltung}
 
 Die zentrale Benutzerverwaltung soll die Getränkekasse und die Tür-Codes verwalten.
+Sie soll auf der Blackbox laufen.
 
 \section{Türschloss}
 
@@ -126,9 +131,6 @@ Wir wollen die Ätzecke komplett abschalten, wenn niemand da ist.
 \begin{itemize}
 \item{} Wir wollen die 4 neuen Boxen an die Anlage anschließen, wissen aber nicht, ob die für das Audiolabor gedacht waren.
 \item{} Wir wollen ein symmetrisches Signal vom Audiolabor zur Anlage. Dafür brauchen wir ein Gerät an der Anlage, das das kann.
-\item{} 
-\item{} 
-\item{} 
 \end{itemize}
 
 \section{Zeug in Kühlschränken}
@@ -137,9 +139,10 @@ Problem: Essen wird in die Kühlschränke gelegt und vergessen.
 
 Lösung: Essen wird mit Aufklebern mit Name und Datum beschriftet und nach \$Zeit vogelfrei.
 
+\zwetschgo bietet an die Küche zu managen.
 
+\section{Telephon}
 
-Netzwerkstruktur
-Streaming von Vorträgen
+Funktionsfähigkeit testen
 
 \end{document}
