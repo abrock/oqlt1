@@ -4,8 +4,8 @@
 \usepackage{microtype}
 
 \newcommand\docsteel{Docsteel}
-
-
+\newcommand\euro{Euro}
+\newcommand\uc{Mikrocontroller}
 
 \begin{document}
 
@@ -49,11 +49,11 @@ Die Firebox hat 5 Ports +1 Uplink-Port. Die Ports werden wie folgt belegt:
 \item{} Mikrocontroller
 \end{itemize}
 
-Die Firebox muss dann irgendwie die \steckdosen bedienen.
+Die Firebox muss dann irgendwie die IP-Steckdosen bedienen.
 
 Wir brauchen schaltbare Steckdosen und einen Automatisumus, der alles unnötiges abschaltet, wenn niemand mehr da ist.
 
-Auf https://datenschleuder.net/munin/net/datenschleuder.net-if_dn42_rzl.html stehen Traffic-Statistiken des Uplinks.
+Auf https://datenschleuder.net/munin/net/datenschleuder.net-if\_dn42\_rzl.html stehen Traffic-Statistiken des Uplinks.
 
 Für interne Dienste steht die Blackbox von Inte zur Verfügung.
 
@@ -63,14 +63,56 @@ Die zentrale Benutzerverwaltung soll die Getränkekasse und die Tür-Codes verwa
 
 \section{Türschloss}
 
-Tim hat ein ABUS Hometech für 60€ bestellt.
+Tim hat ein ABUS Hometech für 60\euro bestellt.
 Da der aktuelle Schließzylinder steht nicht weit genug über den Beschlag über, dieses Problem kann man auf zwei Arten lösen:
 \begin{itemize}
 \item{} Anderen Schließzylinder kaufen
 \item{} Den Beschlag passen aussparen
 \end{itemize}
 
+Möglichkeiten, sich zu authentifizieren:
+\begin{itemize}
+\item{} Pinpad außen an der Tür
+\item{} Tresorschloss mittels Drehencoder
+\item{} SSH-Login per WLAN
+\end{itemize}
 
+\section{Verbindung von Mikrocontrollern}
+
+Möglichkeit: 6lowpan
+Problem: Kosten 20\euro pro Modul
+
+Anderer Ansatz: RS485, Kabel. Dazu wird ein Gateway-Controler benötigt, der als Router für das \uc-Netz fungiert.
+Als Gateway könnte man ein NET-IO-Board von Pollin nehmen.
+
+Tim hat für dieses System 10 Treibermodule für insgesamt 6\euro gekauft
+
+\section{Kassenterminal}
+
+Anforderungen:
+\begin{itemize}
+\item{} Barcode-Scanner
+\item{} \uc
+\item{} Punktmatrix-Display
+\item{} Über den Bus IP sprechen und mit der Kassensoftware kommunizieren.
+\item{} Audio-Feedback
+\item{}
+\end{itemize}
+
+\section{Lichtsteuerung}
+
+Soll ebenfalls über den RS485-Bus laufen.
+Tim redet mit DaFo wegen seinem NET-IO-Board und Lichtsteuerung.
+
+\section{Eigenes Internet}
+
+\begin{itemize}
+\item{} \docsteel hat jemanden bei Alstom angeschrieben, aber noch keine Rückmeldung erhalten.
+\item{} Im Gebäude liegen Leerrohre/Glasfaser, die man dafür nutzen könnte.
+\item{} Inte erklärt sich bereit, da nachzuhaken.
+\item{} \docsteel fragt bei Claranet
+\item{} Niklas fragt bei QSC
+\end{itemize}
 
 
 Streaming von Vorträgen
