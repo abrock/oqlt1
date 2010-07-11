@@ -1,0 +1,93 @@
+\documentclass{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+\newcommand\docsteel{Docsteel}
+
+
+
+\begin{document}
+
+\tableofcontents
+
+\section{Einleitung}
+
+Tim Weber begrüßt die Anwesenden und erklärt, warum er die Projektgruppe Infrastruktur ins Leben gerufen hat.
+
+\section{Netzwerkstruktur}
+
+Alle Netzwerkkabel auf das Patchpanel legen, spezielle Dienste mit merkwürdigen EIgenschaften (Stromzähler...) gesondert beschriften
+um Verwirrung zu vermeiden.
+
+Tim betont den Aspekt der (kurz- und Langfristigen) Wirtschaftlichkeit.
+
+Niklas will das Rack zum Lagern von Netzwerkhardware verwenden.
+
+Tim will die Firebox nicht für allen möglichen Firlefanz einsetzen.
+Deshalb soll ein zweiter Server für interne Dienste angeschafft werden.
+
+Der Internet-Uplink geht durch den Server von \docsteel.
+
+Wir brauchen einen Notfallplan für Dummies, den wir an das Rack hängen und der erklärt, was man tut, wenn
+das Internet ausfällt.
+
+Der Switch von Timo soll sobald wie möglich durch etwas besseres ersetzt werden.
+Der 3Com Superstack fällt wegen bekannter Merkwürdigkeiten aus.
+Die letzten 6 Ports am Switch sind für interne Dienste und sollen entsprechen beschriftet werden.
+
+Tim schlägt vor, den Switch abzuschalten, wenn niemand im Raum ist.
+\docsteel will den WLAN-AP direkt an die Firebox hängen.
+Der Flukso muss dann auch direkt an die Firebox.
+
+Die Firebox hat 5 Ports +1 Uplink-Port. Die Ports werden wie folgt belegt:
+\begin{itemize}
+\item{} Switch
+\item{} WLAN-AP
+\item{} Management
+\item{} Flukso
+\item{} Mikrocontroller
+\end{itemize}
+
+Die Firebox muss dann irgendwie die \steckdosen bedienen.
+
+Wir brauchen schaltbare Steckdosen und einen Automatisumus, der alles unnötiges abschaltet, wenn niemand mehr da ist.
+
+Auf https://datenschleuder.net/munin/net/datenschleuder.net-if_dn42_rzl.html stehen Traffic-Statistiken des Uplinks.
+
+Für interne Dienste steht die Blackbox von Inte zur Verfügung.
+
+\section{Zentrale Benutzerverwaltung}
+
+Die zentrale Benutzerverwaltung soll die Getränkekasse und die Tür-Codes verwalten.
+
+\section{Türschloss}
+
+Tim hat ein ABUS Hometech für 60€ bestellt.
+Da der aktuelle Schließzylinder steht nicht weit genug über den Beschlag über, dieses Problem kann man auf zwei Arten lösen:
+\begin{itemize}
+\item{} Anderen Schließzylinder kaufen
+\item{} Den Beschlag passen aussparen
+\end{itemize}
+
+
+
+
+Streaming von Vorträgen
+
+\section{Benutzerdatenbank}
+
+\section{Türschloss}
+
+Welches Schloss?
+Art der Authentifizierung?
+Raumstatus?
+Kommunikation der Mikrocontroller
+Kassenterminal
+Lichtsteuerung
+Audioverdrahtung
+
+Netzwerkstruktur
+Streaming von Vorträgen
+
+\end{document}
